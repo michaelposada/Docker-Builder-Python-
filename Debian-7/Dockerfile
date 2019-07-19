@@ -9,6 +9,6 @@ RUN apt-get -y install libxext-dev libreadline-dev libx11-dev
 RUN python3 -m pip install --upgrade pip
 RUN python3 -m pip install distro
 # copy the script
-COPY ./run_build.sh ./
+COPY ./run_build.py ./
 # run the script
-CMD ["bash","run_build.sh"]
+CMD ["python3","run_build.py"]
